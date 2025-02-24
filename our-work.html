@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./src/images/icon-site.png">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    <!-- #region start page-->
+    <div class="max-w-[1600px] mx-auto">
+        <div class="fixed w-full h-screen left-0 top-0 tablet:none mobile:hidden bg-[#2b2b2bbb] z-10" id="dsktp"></div>
+        <!-- #region menu-->
+        <nav class="w-full h-[92px] bg-[#1C1E53] flex justify-between">
+            <div class="left w-fit h-full pt-[33px] flex mx-[150px] mobile:pl-[20px] desktop:pl-[160px]">
+                <img src="./src/images/logo.svg" class="w-[122px] h-[24.7px]" alt="">
+            </div>
+            <div class="right font-sans font-medium text-[16px] leading-[28px] flex justify-center items-center">
+                <ul class="text-white tablet:w-[398px] tablet:h-[32.04px] justify-between items-start capitalize tablet:flex 
+                 mobile:hidden tablet:static mobile:absolute mobile:right-[10px] mobile:top-[100px] mobile:w-[200px] mobile:bg-[#1C1E53]
+                  mobile:border-solid mobile:border-[2px] mobile:border-blue-500 mobile:pl-[10px] mobile:rounded-[8px] tablet:border-none
+                   z-60 " id="mbl">
+                <li class="hover:text-slate-400 transition-all duration-200">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="hover:text-slate-400 transition-all duration-200">
+                    <a href="#">About us</a>
+                </li>
+                <li class="hover:text-slate-400 transition-all duration-200">
+                    <a href="#">Features</a>
+                </li>
+                <li class="hover:text-slate-400 transition-all duration-200">
+                    <a href="#">Pricing</a>
+                </li>
+                <li class="hover:text-slate-400 transition-all duration-200">
+                    <a href="#">FAQ</a>
+                </li>
+                <li class="hover:text-slate-400 transition-all duration-200">
+                    <a href="#">Blog</a>
+                </li>
+                </ul>
+                <button
+                class="w-[185px] h-[60px] cursor-pointer rounded-[41px] border-[2px] border-[#F4F6FC33] text-white mx-[10px]
+                 tablet:w-[185px] mobile:w-[100px] mobile:mr-[20px] desktop:mr-[160px] ml-[90px] tablet:flex justify-center items-center mobile:hidden ">
+                Contact us
+              </button>
+              <button class="tablet:w-[185px] mobile:w-[100px] h-[60px] mobile:mr-[20px] desktop:mr-[160px] 
+              ml-[48px] border-solid border-[#F4F5FC33] rounded-[50px] text-[#fff] capitalize tablet:hidden mobile:block z-[60]" onclick="showhide()">
+                Menu</button>
+            </div>
+        </nav>
+        <!-- #endregion -->
+        <!-- #region header-->
+         <header class="w-full h-[416px] flex  bg-[#F4F6FC]">
+            <div class="w-[733px] h-[224px] mx-auto my-[96px] flex flex-wrap justify-center items-center">
+                <h5 class="opacity-70 text-[16px] font-sans leading-[28px] text-center">What we created</h5>
+                <div class="w-full h-[144px]  mb-[32px] flex flex-wrap justify-center itemsc"> 
+                    <h2 class="text-[48px] font-sans leading-[64px] text-center font-medium capitalize">Our Work Portfolio</h2>
+                    <p class="opacity-70 text-[16px] text-center leading-[28px] font-sans">We help teams create great digital products by providing them with tools and technology to make the design-to-code process universally accessible.</p>
+                </div>
+                <div class="w-[147.53px] flex justify-between ">
+                    <a href="#">
+                      <img src="./src/images/lnk-2.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./src/images/lnk-3.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./src/images/lnk-4.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./src/images/lnk-1.svg" alt="">
+                    </a>
+                  </div>
+            </div>
+         </header>
+        <!-- #endregion -->
+        <!-- #region main-->
+         <main>
+            <section class="w-full h-[1942px] mt-[96px]">
+                <div class="w-[1280px] h-full mx-auto">
+                    <nav class="w-[437px] h-[32px] mx-auto">
+                        <ul class="w-full flex justify-between items-center mx-auto px-[10px]">
+                            <li class="text-[#2b2b2b] text-[16px] font-sans font-medium leading-[28px] text-center">
+                                <a href="#" class="hover:text-[#2405F2] transition-all duration-300">All</a>
+                            </li>
+                            <li class="text-[#2b2b2b] text-[16px] font-sans font-medium leading-[28px] text-center">
+                                <a href="#" class="hover:text-[#2405F2] transition-all duration-300">UI Design</a>
+                            </li>
+                            <li class="text-[#2b2b2b] text-[16px] font-sans font-medium leading-[28px] text-center">
+                                <a href="#" class="hover:text-[#2405F2] transition-all duration-300">Webflow Design</a>
+                            </li>
+                            <li class="text-[#2b2b2b] text-[16px] font-sans font-medium leading-[28px] text-center">
+                                <a href="#" class="hover:text-[#2405F2] transition-all duration-300">Figma Design</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="grid grid-cols-2 gap-x-[34px] gap-y-[64px] mt-[48px] mobile:grid-cols-1 tablet:grid-cols-2">
+                        <div class="w-[623px]  flex flex-wrap">
+                            <div class="top w-full "><img src="./src/images/Cover.png" alt=""></div>
+                            <div class="bottom w-full h-[172px] flex flex-wrap">
+                                <h3 class="text-[38px] leading-[56px] capitalize font-sans font-medium">Template 1</h3>
+                                <p class="text-[16px] opacity-70 leading-[28px] text-justify font-sans mb-[24px]">
+                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                                </p>
+                                <div class="lnk w-[149px] h-[24px]  flex gap-[10px]">
+                                    <a href="#" class="text-[16px] leading-[28px] font-sans font-500">View Portfolio</a>
+                                    <img src="./src/images/arrow-blk.svg" class="w-[24px] mt-[5px]" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[623px] flex flex-wrap">
+                            <div class="top w-full "><img src="./src/images/cover-2.png" alt=""></div>
+                            <div class="bottom w-full h-[172px] flex flex-wrap">
+                                <h3 class="text-[38px] leading-[56px] capitalize font-sans font-medium">Template 2</h3>
+                                <p class="text-[16px] opacity-70 leading-[28px] text-justify font-sans mb-[24px]">
+                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                                </p>
+                                <div class="lnk w-[149px] h-[24px]  flex gap-[10px]">
+                                    <a href="#" class="text-[16px] leading-[28px] font-sans font-500">View Portfolio</a>
+                                    <img src="./src/images/arrow-blk.svg" class="w-[24px] mt-[5px]" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[623px]  flex flex-wrap">
+                            <div class="top w-full "><img src="./src/images/Cover-3.png" alt=""></div>
+                            <div class="bottom w-full h-[172px] flex flex-wrap">
+                                <h3 class="text-[38px] leading-[56px] capitalize font-sans font-medium">Template 3</h3>
+                                <p class="text-[16px] opacity-70 leading-[28px] text-justify font-sans mb-[24px]">
+                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                                </p>
+                                <div class="lnk w-[149px] h-[24px]  flex gap-[10px]">
+                                    <a href="#" class="text-[16px] leading-[28px] font-sans font-500">View Portfolio</a>
+                                    <img src="./src/images/arrow-blk.svg" class="w-[24px] mt-[5px]" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[623px] flex flex-wrap">
+                            <div class="top w-full "><img src="./src/images/Cover-4.png" alt=""></div>
+                            <div class="bottom w-full h-[172px] flex flex-wrap">
+                                <h3 class="text-[38px] leading-[56px] capitalize font-sans font-medium">Template 4</h3>
+                                <p class="text-[16px] opacity-70 leading-[28px] text-justify font-sans mb-[24px]">
+                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                                </p>
+                                <div class="lnk w-[149px] h-[24px]  flex gap-[10px]">
+                                    <a href="#" class="text-[16px] leading-[28px] font-sans font-500">View Portfolio</a>
+                                    <img src="./src/images/arrow-blk.svg" class="w-[24px] mt-[5px]" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[623px] flex flex-wrap">
+                            <div class="top w-full "><img src="./src/images/Cover-5.png" alt=""></div>
+                            <div class="bottom w-full h-[172px] flex flex-wrap">
+                                <h3 class="text-[38px] leading-[56px] capitalize font-sans font-medium">Template 5</h3>
+                                <p class="text-[16px] opacity-70 leading-[28px] text-justify font-sans mb-[24px]">
+                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                                </p>
+                                <div class="lnk w-[149px] h-[24px]  flex gap-[10px]">
+                                    <a href="#" class="text-[16px] leading-[28px] font-sans font-500">View Portfolio</a>
+                                    <img src="./src/images/arrow-blk.svg" class="w-[24px] mt-[5px]" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[623px] flex flex-wrap">
+                            <div class="top w-full "><img src="./src/images/Cover-6.png" alt=""></div>
+                            <div class="bottom w-full h-[172px] flex flex-wrap">
+                                <h3 class="text-[38px] leading-[56px] capitalize font-sans font-medium">Template 6</h3>
+                                <p class="text-[16px] opacity-70 leading-[28px] text-justify font-sans mb-[24px]">
+                                    Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
+                                </p>
+                                <div class="lnk w-[149px] h-[24px]  flex gap-[10px]">
+                                    <a href="#" class="text-[16px] leading-[28px] font-sans font-500">View Portfolio</a>
+                                    <img src="./src/images/arrow-blk.svg" class="w-[24px] mt-[5px]" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-[730px] h-[308px]  mx-auto mt-[128px] flex flex-wrap">
+                <div class="head h-[204px] flex flex-wrap">
+                    <h3 class="text-[48px] leading-[64px] text-center font-sans font-850 font-semibold">Let's build something great together
+                    </h3>
+                    <p class="opacity-70 text-[16px] leading-[28px] text-center font-400 font-sans mt-[20px] w-[562px] flex mx-auto">Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.
+                    </p>
+                </div>
+                <button class="w-[230px] h-[64px] mt-[40px] bg-[#FCD980] rounded-[41px] text-[18px] leading-[32px] mx-auto hover:bg-[#fcd980a2]
+                 transition-all duration-250">Contact Us</button>
+            </section>
+         </main>
+        <!-- #endregion -->
+        <!-- #region footer-->
+        <footer class="w-full h-[397px] bg-[#1C1E53] mt-[128px]">
+            <section class="w-full h-[489px] pt-[96px] relative">
+              <div class="desktop:w-[1058px] tablet:ml-[160px] flex tablet:justify-between mobile:justify-center gap-[150px]  flex-row px-[10px]">
+                <div class="left mx-[100px]">
+                  <img class="w-[160px] h-[32.41px]" src="./src/images/logo.svg" alt="">
+                  <p class="max-w-[399px] font-normal  text-[16px] leading-[28px] text-white opacity-[80%] mt-[23.59px]">
+                    We are always open to discuss your project and improve your
+                    online presence.
+                  </p>
+                </div>
+                <div class=" right w-[399px] h-[206px] tablet:w-[399px] mobile:max-w-[399px]">
+                  <h2 class="font-bold text-[48px] leading-[64px] text-white">
+                    Lets Talk!
+                  </h2>
+                  <p class="font-normal text-[16px] leading-[28px] text-white opacity-[80%] mt-[14px]">
+                    We are always open to discuss your project,
+                     improve your online presence and help with your
+                      UX/UI design challenges.
+                  </p>
+                  <div class="w-[144px] flex justify-between mt-[28px]">
+                    <a href="#">
+                      <img src="./src/images/ft-1.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./src/images/ft-2.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./src/images/ft-3.svg" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="./src/images/ft-4.svg" alt="">
+                    </a>
+                  </div>
+                </div>  
+              </div>
+              <div class="w-[517px] mobile:w-full tablet:w-[517px] h-[95px] relative mobile:left-0  tablet:left-[160px] bottom-0 bg-[#FCD980] tablet:block mobile:flex justify-center items-center desktop:mt-0 mobile:mt-[10px] mx-[20px]">
+                  <div class="w-[343px] tablet:ml-[37px] flex justify-between  p-[20px]">
+                    <div class="left w-fit tablet:mt-[17px]">
+                      <h2 class="font-sans text-[18px] leading-[32px] text-[#282938]">
+                        Email me at
+                      </h2>
+                      <h4 class="font-sans text-[16px] leading-[28px] text-[#282938] opacity-[80%]">
+                        contact@website.com
+                      </h4>
+                    </div>
+                    <div class="right w-fit tablet:mt-[17px]">
+                      <h2 class="font-sans text-[18px] leading-[32px] text-[#282938]">
+                        Call us
+                      </h2>
+                      <h4 class="font-sans text-[16px] leading-[28px] text-[#282938] opacity-[80%]">
+                        0927 6277 28525
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="w-full h-[92px] bg-white flex tablet:justify-between flex-wrap flex-row mobile:justify-center items-center mobile:px-0 tablet:px-[160px] gap-[380px]">
+              <h3 class="font-sans font-medium text-[16px] leading-[28px] text-[#282938] desktop:mx-0 mx-auto">
+                Copyright 2022, Finsweet.com
+              </h3>
+              <ul class="w-[437px] h-[28px] flex font-medium font-sans text-[16px] leading-[28px] text-[#282938] tablet:flex justify-between @min-xs:hidden desktop:mx-0 mx-auto">
+                <li class="hover:text-[#585858]">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="hover:text-[#585858]">
+                  <a href="#">About us</a>
+                </li>
+                <li class="hover:text-[#585858]">
+                  <a href="#">Features</a>
+                </li>
+                <li class="hover:text-[#585858]">
+                  <a href="#">Pricing</a>
+                </li>
+                <li class="hover:text-[#585858]">
+                  <a href="#">FAO</a>
+                </li>
+                <li class="hover:text-[#585858]">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </section>
+           </footer>
+        <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+
+
+
+    <script>
+        //button in mobile-screen
+        function showhide() {
+          var div1 = document.getElementById("dsktp");
+          var div2 = document.getElementById("mbl");
+          if (div1.style.display !== "block" && div2.style.display !== "block") {
+            div1.style.display = "block";
+            div2.style.display = "block";
+          } else {
+            div1.style.display = "none";
+            div2.style.display = "none";
+          }
+        }
+  
+        // refreshing the site
+        history.scrollRestoration = "manual";
+      </script>
+</body>
+</html>

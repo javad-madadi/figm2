@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
+.slider-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none;
+  display: flex;
+}
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+.slide {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}

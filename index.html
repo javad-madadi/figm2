@@ -1,395 +1,886 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fgma</title>
-  <link rel="stylesheet" href="./src/css/main.css">
-</head>
-<body>
-  <!-- #region start-pj -->
-    <div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finsweet</title>
+    <link rel="icon" href="./src/images/icon-site.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <!-- #region start-pj -->
+    <div class="wrapper mx-auto max-w-[1600px] ">
       <!-- #region hero-->
-       <div class="w-full h-[760px]  bg-[#1C1E53]">
+       <div class="fixed w-full h-screen left-0 top-0 tablet:none mobile:hidden bg-[#2b2b2bbb] z-[10]" id="dsktp"></div>
+      <div class="w-full h-[760px] bg-[#1C1E53] mobile:h-fit desktop:h-[668px]">
         <!-- #region menu-->
-         <div class="w-full h-[92px]  flex">
-          <div class="left w-1/6 h-[inherit]  ps-[160px] box-border flex items-center ">
-            <img src="./src/images/logo.svg" class="w-[122px] " alt="">
+        <nav class="w-full h-[92px] bg-[#1C1E53] flex justify-between fixed top-0 z-50">
+          <div class="left w-fit h-full pt-[33px] flex mx-[150px] mobile:pl-[20px] desktop:pl-[160px]">
+              <img src="./src/images/logo.svg" class="w-[122px] h-[24.7px]" alt="">
           </div>
-          <div class="right w-5/6 h-[inherit]  box-border flex items-center justify-center">
-            <nav class="flex items-center justify-end gap-[32px]">
-              <a href="./index.html" class="text-white  font-[16px] font-500 w-[48px]">Home</a> 
-              <a href="#" class="text-white  font-[16px] font-500 w-[72px]">About us</a> 
-              <a href="#" class="text-white  font-[16px] font-500  w-[70px]">Features</a> 
-              <a href="#" class="text-white  font-[16px] font-500 w-[55px]">Pricing</a> 
-              <a href="#" class="text-white  font-[16px] font-500 w-[32px]">FAQ</a> 
-              <a href="#" class="text-white  font-[16px] font-500 w-[36px]">Blog</a>
-              <button class="w-[185px] h-[60px] cursor-pointer rounded-[41px] border-[2px] border-[#F4F6FC33] text-white">Contact us</button> 
-            </nav>
+          <div class="right font-sans font-medium text-[16px] leading-[28px] flex justify-center items-center">
+              <ul class="text-slate-400 tablet:w-[398px] tablet:h-[32.04px] justify-between items-start capitalize tablet:flex 
+               mobile:hidden tablet:static mobile:absolute mobile:right-[10px] mobile:top-[100px] mobile:w-[200px] mobile:bg-[#1C1E53]
+                mobile:border-solid mobile:border-[2px] mobile:border-blue-500 mobile:pl-[10px] mobile:rounded-[8px] tablet:border-none
+                 z-60 " id="mbl">
+              <li class="hover:text-white transition-all duration-200">
+                  <a href="./index.html">Home</a>
+              </li>
+              <li class="hover:text-white transition-all duration-200">
+                  <a href="#">About us</a>
+              </li>
+              <li class="hover:text-white transition-all duration-200">
+                  <a href="#">Features</a>
+              </li>
+              <li class="hover:text-white transition-all duration-200">
+                  <a href="#">Pricing</a>
+              </li>
+              <li class="hover:text-white transition-all duration-200">
+                  <a href="#">FAQ</a>
+              </li>
+              <li class="hover:text-white transition-all duration-200">
+                  <a href="#">Blog</a>
+              </li>
+              </ul>
+              <button
+              class="w-[185px] h-[60px] cursor-pointer rounded-[41px] border-[2px] border-[#F4F6FC33] text-white mx-[10px]
+               tablet:w-[185px] mobile:w-[100px] mobile:mr-[20px] desktop:mr-[160px] ml-[90px] tablet:flex justify-center items-center mobile:hidden ">
+              Contact us
+            </button>
+            <button class="tablet:w-[185px] mobile:w-[100px] h-[60px] mobile:mr-[20px] desktop:mr-[160px] 
+            ml-[48px] border-solid border-[#F4F5FC33] rounded-[50px] text-[#fff] capitalize tablet:hidden mobile:block z-[60]" onclick="showhide()">
+              Menu</button>
           </div>
-         </div>
+      </nav>
         <!-- #endregion end-menu -->
         <div class="flex gap-[60px]">
-          <div class="w-[582px] h-[414px]  mt-[200px] ms-[160px]">
-            <div class="top w-[inherit] h-[302px] ">
-              <h1 class="text-[54px] font-600 font-semibold text-white leading-[74px]">
+          <div class="w-[582px] h-[414px] mt-[200px] ms-[160px]">
+            <div class="top w-[inherit] h-[302px]">
+              <h1
+                class="text-[54px] font-600 font-semibold text-white leading-[74px]"
+              >
                 Building stellar websites for early startups
               </h1>
-              <p class="text-[16px] leading-[28px] font-400 text-white pt-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis nesciunt cum eum fugit.</p>
+              <p
+                class="text-[16px] leading-[28px] font-400 text-white pt-[24px]"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                corporis nesciunt cum eum fugit.
+              </p>
             </div>
             <div class="bottom flex mt-[48px] items-center">
-              <button class="w-[230px] h-[64px] flex items-center bg-[#FCD980] justify-center rounded-[41px] text-[18px] leading-[32px] font-800 font-sans cursor-pointer"><p class="w-[118px] h-[32px]">View our work</p></button>
-              <div class="flex w=[128px] h-[28px] ps-[40px] justify-center items-center">
-              <p class="text-[16px] leading-[28px] text-white font-sans">View Pricing</p>
-              <img src="./src/images/arrow.svg" class="w-[24px] ms-[16px]" alt="">
+              <button
+                class="w-[230px] h-[64px] flex items-center bg-[#FCD980] justify-center rounded-[41px] text-[18px] leading-[32px] font-800 font-sans cursor-pointer"
+              >
+                <p class="w-[118px] h-[32px]">View our work</p>
+              </button>
+              <div
+                class="flex w=[128px] h-[28px] ps-[40px] justify-center items-center"
+              >
+                <p class="text-[16px] leading-[28px] text-white font-sans">
+                  View Pricing
+                </p>
+                <img
+                  src="./src/images/arrow.svg"
+                  class="w-[24px] ms-[16px]"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-          <div class="w-[638px] h-[361px]  mt-[241px] flex justify-center">
-            <div class="relative bg-gray-900 text-white p-8 rounded-2xl w-full max-w-5xl mx-auto">
-              <!-- پنجره مرورگر -->
-              <div class="bg-gray-800 rounded-lg p-6 shadow-2xl relative">
-                <!-- نقاط مرورگر -->
-                <div class="flex gap-2 mb-4 bg-gray-500 h-[36.74px] items-center rounded-2xl">
-                  <span class="w-3 h-3 bg-red-500 rounded-full ms-[20px]"></span>
-                  <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
-                  <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-                </div>
-                <!-- گرید اصلی -->
-                <div class="grid grid-cols-3 items-center gap-8 relative">
-                  <!-- جعبه چپ -->
-                  <div class="relative flex flex-col items-center text-center bg-gray-700 p-6 rounded-lg">
-                    <div class="bg-gray-500 w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                      <span class="text-xl font-bold">A</span>
-                    </div>
-                    <p class="text-sm">Image & Text</p>
-                    <!-- خط اتصال -->
-                    <div class="absolute top-1/2 right-0 transform translate-x-1/2 w-8 h-0.5 bg-white"></div>
-                  </div>
-            
-                  <!-- مرکز -->
-                  <div class="relative flex flex-col items-center">
-                    <div class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-xl">
-                      $
-                    </div>
-                    <p class="text-sm mt-4">Process</p>
-                    <!-- خطوط اتصال -->
-                    <div class="absolute top-1/2 left-0 transform -translate-x-1/2 w-8 h-0.5 bg-white"></div>
-                    <div class="absolute top-1/2 right-0 transform translate-x-1/2 w-8 h-0.5 bg-white"></div>
-                  </div>
-            
-                  <!-- جعبه راست -->
-                  <div class="relative flex flex-col items-center text-center bg-gray-700 p-6 rounded-lg">
-                    <div class="bg-gray-500 w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                      <span class="text-xl font-bold">B</span>
-                    </div>
-                    <p class="text-sm">Code</p>
-                    <!-- خط اتصال -->
-                    <div class="absolute top-1/2 left-0 transform -translate-x-1/2 w-8 h-0.5 bg-white"></div>
-                  </div>
-                </div>
-              </div>
-            </div>            
+          <div class="mt-[200px] tablet:w-[630px] tablet:h-[361.12px]">
+            <img class="px-[10px]" src="./src/images/hero.svg" alt="" />
           </div>
         </div>
-       </div>
+      </div>
       <!-- #endregion end hero-->
-      <!-- #region how it works--> 
+      <!-- #region how it works-->
       <div class="w-full h-[661px] bg-[#F4F6FC] flex gap-x[48px] gap-[142px]">
-        <div class="left w-[405px] h-[184px] mt-[128px] ms-[165px] ">
-          <h2 class="text-[48px] font-bold font-sans leading-[64px]">How we work</h2>
-          <p class="w-[405px] h-[56px] mt-[16px] text-start ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor, sit amet</p>
+        <div class="left w-[405px] h-[184px] mt-[128px] ms-[165px]">
+          <h2 class="text-[48px] font-bold font-sans leading-[64px]">
+            How we work
+          </h2>
+          <p class="w-[405px] h-[56px] mt-[16px] text-start">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor Lorem ipsum dolor, sit amet
+          </p>
           <a href="#" class="flex gap-[16px] mt-[16px]">
-          <p class="text-[18px] font-bold text-[#2405F2]" >Get in touch with us</p>
-          <img src="./src/images/arrow-bl.svg" class="w-[24px]" alt="">
+            <p class="text-[18px] font-bold text-[#2405F2]">
+              Get in touch with us
+            </p>
+            <img src="./src/images/arrow-bl.svg" class="w-[24px]" alt="" />
           </a>
         </div>
-        <div class="right w-[656px] h-[405px] mt-[128px] rounded-[8px] flex flex-wrap flex-row justify-center items-center  ">
+        <div
+          class="right w-[656px] h-[405px] mt-[128px] rounded-[8px] flex flex-wrap flex-row justify-center items-center"
+        >
           <div class="w-[328px] h-[178px] flex">
-            <div class="w-[inherit] h-[inherit] ">
-              <img src="./src/images/pointer 1.png" class="w-[50px] h-[50px]" alt="">
-              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">Strategy</h5>
-              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+            <div class="w-[inherit] h-[inherit]">
+              <img
+                src="./src/images/pointer 1.png"
+                class="w-[50px] h-[50px]"
+                alt=""
+              />
+              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">
+                Strategy
+              </h5>
+              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
             </div>
           </div>
           <div class="w-[328px] h-[178px] flex">
-            <div class="w-[inherit] h-[inherit] ">
-              <img src="./src/images/pointer 2.png" class="w-[50px] h-[50px]" alt="">
-              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">Wireframing</h5>
-              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+            <div class="w-[inherit] h-[inherit]">
+              <img
+                src="./src/images/pointer 2.png"
+                class="w-[50px] h-[50px]"
+                alt=""
+              />
+              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">
+                Wireframing
+              </h5>
+              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
             </div>
           </div>
           <div class="w-[328px] h-[178px] flex">
-            <div class="w-[inherit] h-[inherit] ">
-              <img src="./src/images/pointer 3.png" class="w-[50px] h-[50px]" alt="">
-              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">Design</h5>
-              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+            <div class="w-[inherit] h-[inherit]">
+              <img
+                src="./src/images/pointer 3.png"
+                class="w-[50px] h-[50px]"
+                alt=""
+              />
+              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">
+                Design
+              </h5>
+              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
             </div>
           </div>
           <div class="w-[328px] h-[178px] flex">
-            <div class="w-[inherit] h-[inherit] ">
-              <img src="./src/images/pointer 4.png" class="w-[50px] h-[50px]" alt="">
-              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">Development</h5>
-              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .</p>
+            <div class="w-[inherit] h-[inherit]">
+              <img
+                src="./src/images/pointer 4.png"
+                class="w-[50px] h-[50px]"
+                alt=""
+              />
+              <h5 class="text-[32px] leading-[48px] font-semibold mt-[16px]">
+                Development
+              </h5>
+              <p class="pt-[16px] text-[16px] leading-[28px] opacity-[70%]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
             </div>
           </div>
         </div>
-       </div>
+      </div>
       <!-- #endregion -->
       <!-- #region our pj-->
-       <div class="w-[1280px] h-[728px]  mx-auto my-[128px] flex flex-wrap flex-row gap-[32px] ">
+      <div
+        class="w-[1280px] h-[728px] mx-auto my-[128px] flex flex-wrap flex-row gap-[32px]"
+      >
         <div class="head w-full h-[64px] flex justify-between">
-          <h2 class="text-[48px] font-semibold w-[467px] h-[64px] leading-[64px]">View our projects</h2>
-          <a href="#" class="flex items-center gap-[16px] text-[16px] font-semibold leading-[28px]">View More <img src="./src/images/arrow-blk.svg" class="w-[24px] flex " alt=""></a>
+          <h2
+            class="text-[48px] font-semibold w-[467px] h-[64px] leading-[64px]"
+          >
+            View our projects
+          </h2>
+          <a
+            href="#"
+            class="flex items-center gap-[16px] text-[16px] font-semibold leading-[28px]"
+            >View More
+            <img src="./src/images/arrow-blk.svg" class="w-[24px] flex" alt=""
+          /></a>
         </div>
-        <div class="card w-[834px] h-[600px]  mt-[32px] flex relative">
-          <div class="w-[396px] h-[600px] bg-gradient-to-br from-[#1C1E536B] to-[#1C1E53] hover:bg-[#364162] transition-all duration-300 ease-linear absolute opacity-83">
-            <p class="text-white text-[24px] font-semibold ps-[48px] pe-[35px] mt-[312px] leading-[36px]">Workhub office Webflow Webflow Design</p>
-            <p class="text-white text-[16px] leading-[28px] font-sans ps-[48px] pe-[35px] mt-[16px] mb-[48px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam</p>
-            <a href="#" class="text-[#FCD980] w-[140px] h-[28px] gap-[16px] text-[16px] leading-[28px] font-medium ms-[48px] me-[248px] flex items-center">View project <img src="./src/images/arrow-yl.svg" class="flex w-[24px] mt-[5px]" alt=""></a>
+        <div class="card w-[834px] h-[600px] mt-[32px] flex relative">
+          <div
+            class="w-[396px] h-[600px] bg-gradient-to-br from-[#1C1E536B] to-[#1C1E53] hover:bg-[#364162] transition-all duration-300 ease-linear absolute opacity-83"
+          >
+            <p
+              class="text-white text-[24px] font-semibold ps-[48px] pe-[35px] mt-[312px] leading-[36px]"
+            >
+              Workhub office Webflow Webflow Design
+            </p>
+            <p
+              class="text-white text-[16px] leading-[28px] font-sans ps-[48px] pe-[35px] mt-[16px] mb-[48px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam
+            </p>
+            <a
+              href="#"
+              class="text-[#FCD980] w-[140px] h-[28px] gap-[16px] text-[16px] leading-[28px] font-medium ms-[48px] me-[248px] flex items-center"
+              >View project
+              <img
+                src="./src/images/arrow-yl.svg"
+                class="flex w-[24px] mt-[5px]"
+                alt=""
+            /></a>
           </div>
-          <img src="./src/images/page-1.png" class="object-cover w-full h-full"  alt="">
+          <img
+            src="./src/images/page-1.png"
+            class="object-cover w-full h-full"
+            alt=""
+          />
         </div>
-        <div class="w-[414px] h-[600px]  mt-[32px] flex flex-wrap">
-          <div class="w-[414px] h-[284px]  relative flex justify-end">
-            <div class="w-full h-full bg-gradient-to-br from-[#1C1E536B] to-[#1C1E53] absolute hover:bg-[#364162] transition-all duration-300 ease-linear opacity-83">
-              <p class="w-[313px] h-[72px] text-[24px] leading-[36px] text-white ps-[56px] pe-[36px] mt-[129px] font-medium">Unisaas Website 
-                Design</p>
-                <a href="#" class="flex gap-[16px] w-[150px] h-[28px] text-[16px] text-[#FCD980] items-center ms-[56px] me-[239px] leading-[28px]">View portfolio <img src="./src/images/arrow-yl.svg" class="flex w-[24px] mt-[5px]" alt=""></a>
+        <div class="w-[414px] h-[600px] mt-[32px] flex flex-wrap">
+          <div class="w-[414px] h-[284px] relative flex justify-end">
+            <div
+              class="w-full h-full bg-gradient-to-br from-[#1C1E536B] to-[#1C1E53] absolute hover:bg-[#364162] transition-all duration-300 ease-linear opacity-83"
+            >
+              <p
+                class="w-[313px] h-[72px] text-[24px] leading-[36px] text-white ps-[56px] pe-[36px] mt-[129px] font-medium"
+              >
+                Unisaas Website Design
+              </p>
+              <a
+                href="#"
+                class="flex gap-[16px] w-[150px] h-[28px] text-[16px] text-[#FCD980] items-center ms-[56px] me-[239px] leading-[28px]"
+                >View portfolio
+                <img
+                  src="./src/images/arrow-yl.svg"
+                  class="flex w-[24px] mt-[5px]"
+                  alt=""
+              /></a>
             </div>
-            <img src="./src/images/page-2.png" class="object-cover w-full h-full" alt="">
+            <img
+              src="./src/images/page-2.png"
+              class="object-cover w-full h-full"
+              alt=""
+            />
           </div>
-          
-        <div class="card-2 w-[405px]  h-[284px] mt-[32px]">
-          <img src="./src/images/page-3.png" class="object-cover w-full h-full" alt="">
+
+          <div class="card-2 w-[405px] h-[284px] mt-[32px]">
+            <img
+              src="./src/images/page-3.png"
+              class="object-cover w-full h-full"
+              alt=""
+            />
+          </div>
         </div>
-        </div>
-       </div>
+      </div>
       <!-- #endregion -->
       <!-- #region features-->
-       <div class="w-full h-[1191px] bg-[#F4F6FC] flex flex-wrap flex-row">
-        <div class="head w-[630px] h-[232px] mx-auto mt-[128px] flex justify-center flex-wrap mb-[47px]">
-          <p class="text-center text-[16px] font-sans leading-[28px] w-[419px] h-[28px] ">Features</p>
-          <h2 class="text-center text-[48px] leading-[64px] ps-[105px] pe-[106px] font-semibold w-full h-[192px] mt-[12px]">Design that solves problems, one product at a time</h2>
+      <div class="w-full h-[1191px] bg-[#F4F6FC] flex flex-wrap flex-row">
+        <div
+          class="head w-[630px] h-[232px] mx-auto mt-[128px] flex justify-center flex-wrap mb-[47px]"
+        >
+          <p
+            class="text-center text-[16px] font-sans leading-[28px] w-[419px] h-[28px]"
+          >
+            Features
+          </p>
+          <h2
+            class="text-center text-[48px] leading-[64px] ps-[105px] pe-[106px] font-semibold w-full h-[192px] mt-[12px]"
+          >
+            Design that solves problems, one product at a time
+          </h2>
         </div>
-        <div class="grid grid-cols-3 gap-x-[32px] gap-y-[24px] mx-auto mb-[250px]">
-          <div class="w-[405px] h-[316px]  pt-[58px] ps-[48px]">
-            <img src="./src/images/Icon-1.png" class="flex w-[32px] h-[28px] mb-[22px]" alt="">
-            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">Uses Client First</h6>
-            <p class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.</p>
+        <div
+          class="grid grid-cols-3 gap-x-[32px] gap-y-[24px] mx-auto mb-[250px]"
+        >
+          <div class="w-[405px] h-[316px] pt-[58px] ps-[48px]">
+            <img
+              src="./src/images/Icon-1.png"
+              class="flex w-[32px] h-[28px] mb-[22px]"
+              alt=""
+            />
+            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">
+              Uses Client First
+            </h6>
+            <p
+              class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
           </div>
-          <div class="w-[405px] h-[316px]  pt-[58px] ps-[48px]">
-            <img src="./src/images/Icon-2.png" class="flex w-[32px] h-[28px] mb-[22px]" alt="">
-            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">Two Free Revision Round</h6>
-            <p class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.</p>
+          <div class="w-[405px] h-[316px] pt-[58px] ps-[48px]">
+            <img
+              src="./src/images/Icon-2.png"
+              class="flex w-[32px] h-[28px] mb-[22px]"
+              alt=""
+            />
+            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">
+              Two Free Revision Round
+            </h6>
+            <p
+              class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
           </div>
-          <div class="w-[405px] h-[316px]  pt-[58px] ps-[48px]">
-            <img src="./src/images/icon-3.png" class="flex w-[32px] h-[28px] mb-[22px]" alt="">
-            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">Template Customization</h6>
-            <p class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.</p>
+          <div class="w-[405px] h-[316px] pt-[58px] ps-[48px]">
+            <img
+              src="./src/images/icon-3.png"
+              class="flex w-[32px] h-[28px] mb-[22px]"
+              alt=""
+            />
+            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">
+              Template Customization
+            </h6>
+            <p
+              class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
           </div>
-          <div class="w-[405px] h-[316px]  pt-[58px] ps-[48px]">
-            <img src="./src/images/Icon-4.png" class="flex w-[32px] h-[28px] mb-[22px]" alt="">
-            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">24/7 Support</h6>
-            <p class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.</p>
+          <div class="w-[405px] h-[316px] pt-[58px] ps-[48px]">
+            <img
+              src="./src/images/Icon-4.png"
+              class="flex w-[32px] h-[28px] mb-[22px]"
+              alt=""
+            />
+            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">
+              24/7 Support
+            </h6>
+            <p
+              class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
           </div>
-          <div class="w-[405px] h-[316px]  pt-[58px] ps-[48px]">
-            <img src="./src/images/Icon-5.png" class="flex w-[32px] h-[28px] mb-[22px]" alt="">
-            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">Quick Delivery</h6>
-            <p class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.</p>
+          <div class="w-[405px] h-[316px] pt-[58px] ps-[48px]">
+            <img
+              src="./src/images/Icon-5.png"
+              class="flex w-[32px] h-[28px] mb-[22px]"
+              alt=""
+            />
+            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">
+              Quick Delivery
+            </h6>
+            <p
+              class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
           </div>
-          <div class="w-[405px] h-[316px]  pt-[58px] ps-[48px]">
-            <img src="./src/images/Icon-6.png" class="flex w-[32px] h-[28px] mb-[22px]" alt="">
-            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">Hands-on approach</h6>
-            <p class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.</p>
+          <div class="w-[405px] h-[316px] pt-[58px] ps-[48px]">
+            <img
+              src="./src/images/Icon-6.png"
+              class="flex w-[32px] h-[28px] mb-[22px]"
+              alt=""
+            />
+            <h6 class="text-[24px] leading-[36px] font-medium mb-[12px]">
+              Hands-on approach
+            </h6>
+            <p
+              class="text-[16px] leading-[28px] opacity-[70%] text-start w-[325px] h-[112px] mt-[12px]"
+            >
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
           </div>
         </div>
-       </div>
+      </div>
       <!-- #endregion -->
       <!-- #region client-slider -->
-       <div class="w-full h-[506px] bg-[#F4F6FC] flex">
-        <div class="left w-[327px] h-[184px]  mt-[130px] ms-[160px] me-[110px]">
-          <h3 class="text-[38px] leading-[56px] mb-[16px] font-bold">What our clients say about us</h3>
-          <p class="text-[16px] leading-[28px] opacity-[70%] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+      <div class="w-full h-[506px] bg-[#F4F6FC] flex">
+        <div class="left w-[327px] h-[184px] mt-[130px] ms-[160px] me-[110px]">
+          <h3 class="text-[38px] leading-[56px] mb-[16px] font-bold">
+            What our clients say about us
+          </h3>
+          <p class="text-[16px] leading-[28px] opacity-[70%]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+          </p>
         </div>
         <div class="right">
-          <div class="sldr w-[834px] h-[250px] mt-[130px] flex">
-            <div class="max-w-4xl mx-auto px-6">     
+          <div class="sldr w-[834px] h-[250px] mt-[120px] flex">
+            <div class="max-w-4xl mx-auto px-6">
               <!-- Slider Container -->
               <div class="relative overflow-hidden">
-                  <div class="slider-container  w-full flex transition-transform duration-300" id="slider">
-                      <!-- Slide 1 -->
-                      <div class="slide mt-[20px] bg-white p-6 flex flex-col items-center justify-center text-center rounded-2xl shadow-2xl">
-                          <p class="text-lg text-gray-900">
-                              "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
-                          </p>
-                          <div class="flex items-center gap-4 mt-4">
-                              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full" alt="Jenny Wilson">
-                              <div>
-                                  <p class="font-semibold text-gray-900">Jenny Wilson</p>
-                                  <p class="text-sm text-gray-500">Vice President</p>
-                              </div>
-                          </div>
+                <div
+                  class="slider-container w-full flex transition-transform duration-300"
+                  id="slider"
+                >
+                  <!-- Slide 1 -->
+                  <div
+                    class="slide mt-[20px] bg-transparent flex flex-col items-start justify-start text-center"
+                  >
+                    <p class="text-lg text-gray-900">
+                      "The best agency we’ve worked with so far. They understand
+                      our product and are able to add new features with a great
+                      focus."
+                    </p>
+                    <div class="flex gap-4 ms-[10px]">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/44.jpg"
+                        class="w-12 h-12 rounded-full"
+                        alt="Jenny Wilson"
+                      />
+                      <div>
+                        <p class="font-semibold text-gray-900">Jenny Wilson</p>
+                        <p class="text-sm text-gray-500">Vice President</p>
                       </div>
-                      <!-- Slide 2 -->
-                      <div class="slide bg-white p-6 flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
-                          <p class="text-lg text-gray-900">
-                              "Amazing team with great expertise. Their dedication to delivering high-quality work is impressive!"
-                          </p>
-                          <div class="flex items-center gap-4 mt-4">
-                              <img src="https://randomuser.me/api/portraits/men/45.jpg" class="w-12 h-12 rounded-full" alt="Robert Smith">
-                              <div>
-                                  <p class="font-semibold text-gray-900">Robert Smith</p>
-                                  <p class="text-sm text-gray-500">CEO</p>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- Slide 3 -->
-                      <div class="slide bg-white p-6 flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
-                          <p class="text-lg text-gray-900">
-                              "A fantastic experience! The level of detail and professionalism they bring is unmatched."
-                          </p>
-                          <div class="flex items-center gap-4 mt-4">
-                              <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-12 h-12 rounded-full" alt="Sarah Johnson">
-                              <div>
-                                  <p class="font-semibold text-gray-900">Sarah Johnson</p>
-                                  <p class="text-sm text-gray-500">Marketing Director</p>
-                              </div>
-                          </div>
-                      </div>
+                    </div>
+                    <p class="text-[32px] mt-[20px] text-center leading-[48px]">
+                      "The best agency we’ve worked with so far. They understand
+                      our product and are able to add new features with a great
+                      focus."
+                    </p>
                   </div>
-      
-                  <!-- Navigation Buttons -->
-                  <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200">
-                      &larr;
-                  </button>
-                  <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200">
-                      &rarr;
-                  </button>
+                  <!-- Slide 2 -->
+                  <div
+                    class="slide bg-transparent flex flex-col items-start justify-center text-center"
+                  >
+                    <p class="text-lg text-gray-900">
+                      "Amazing team with great expertise. Their dedication to
+                      delivering high-quality work is impressive!"
+                    </p>
+                    <div class="flex gap-4 ms-[10px]">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/45.jpg"
+                        class="w-12 h-12 rounded-full"
+                        alt="Robert Smith"
+                      />
+                      <div>
+                        <p class="font-semibold text-gray-900">Robert Smith</p>
+                        <p class="text-sm text-gray-500">CEO</p>
+                      </div>
+                    </div>
+                    <p class="text-[32px] mt-[40px] text-center leading-[48px]">
+                      "Amazing team with great expertise. Their dedication to
+                      delivering high-quality work is impressive!"
+                    </p>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div
+                    class="slide bg-transparent flex flex-col items-start justify-center text-center"
+                  >
+                    <p class="text-lg text-gray-900">
+                      "A fantastic experience! The level of detail and
+                      professionalism they bring is unmatched."Lorem ipsum dolor
+                      sit amet consectetur adipisicing elit
+                    </p>
+                    <div class="flex gap-4 ms-[12px]">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/45.jpg"
+                        class="w-12 h-12 rounded-full"
+                        alt="Sarah Johnson"
+                      />
+                      <div>
+                        <p class="font-semibold text-gray-900">Sarah Johnson</p>
+                        <p class="text-sm text-gray-500">Marketing Director</p>
+                      </div>
+                    </div>
+                    <p class="text-[32px] mt-[40px] text-center leading-[48px]">
+                      "A fantastic experience! The level of detail and
+                      professionalism they bring is unmatched."
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button
+                  id="prev"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200"
+                >
+                  &larr;
+                </button>
+                <button
+                  id="next"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 transition-all duration-200"
+                >
+                  &rarr;
+                </button>
               </div>
-          </div> 
+            </div>
           </div>
         </div>
-       </div>
+      </div>
       <!-- #endregion -->
       <!-- #region FAQ-->
-       <div class="w-[1284px] h-[537px]   my-[128px] mx-auto flex flex-wrap gap-[109px]">
+      <div
+        class="w-[1284px] h-[537px] my-[128px] mx-auto flex flex-wrap gap-[109px]"
+      >
         <div class="left w-[328px] h-[160px]">
-          <h3 class="text-[38px] leading-[56px] font-bold mb-[16px]">Frequently asked questions</h3>
-          <a href="#" class="text-[18px] text-center text-[#2405F2] leading-[32px]">Contact us for more info</a>
+          <h3 class="text-[38px] leading-[56px] font-bold mb-[16px]">
+            Frequently asked questions
+          </h3>
+          <a
+            href="#"
+            class="text-[18px] text-center text-[#2405F2] leading-[32px]"
+            >Contact us for more info</a
+          >
         </div>
         <div class="right w-[847px] h-[530px] bg-amber-300 my-auto">
           <div class="w-full h-full mx-auto p-6 bg-white shadow-lg">
             <!-- FAQ Item 1 -->
             <details class="border-b border-gray-200 py-4">
-                <summary class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between">  
+              <summary
+                class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between"
+              >
                 01 - How much time does it take?
                 <span class="text-gray-500">+</span>
-                </summary>
-                <p class="mt-2 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+              </summary>
+              <p class="mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </details>
             <!-- FAQ Item 2 -->
             <details class="border-b border-gray-200 py-4">
-              <summary class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between">  
-              02 - How much time does it take?
-                  <span class="text-gray-500">+</span>
+              <summary
+                class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between"
+              >
+                02 - How much time does it take?
+                <span class="text-gray-500">+</span>
               </summary>
               <p class="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-          </details>
+            </details>
             <!-- FAQ Item 3 -->
             <details class="border-b border-gray-200 py-4">
-              <summary class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between">  
-              03 - How much time does it take?
-                  <span class="text-gray-500">+</span>
+              <summary
+                class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between"
+              >
+                03 - How much time does it take?
+                <span class="text-gray-500">+</span>
               </summary>
               <p class="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-          </details>
+            </details>
             <!-- FAQ Item 4 -->
             <details class="border-b border-gray-200 py-4">
-              <summary class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between">  
-              04 - How much time does it take?
-                  <span class="text-gray-500">+</span>
+              <summary
+                class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between"
+              >
+                04 - How much time does it take?
+                <span class="text-gray-500">+</span>
               </summary>
               <p class="mt-2 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-          </details>
-          <details class="border-b border-gray-200 py-4">
-            <summary class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between">  
-            05 - How much time does it take?
+            </details>
+            <details class="border-b border-gray-200 py-4">
+              <summary
+                class="text-[24px] font-semibold text-gray-900 cursor-pointer select-none flex justify-between"
+              >
+                05 - How much time does it take?
                 <span class="text-gray-500">+</span>
-            </summary>
-            <p class="mt-2 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </details>  
+              </summary>
+              <p class="mt-2 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </details>
+          </div>
         </div>
-        </div>
-       </div>
+      </div>
       <!-- #endregion FAQ-->
-       
+      <!-- #region form-->
+      <section
+        class="w-[1280px] mx-auto h-[819px] pb-[128px] bg-white"
+      >
+        <div
+          class="h-full mx-auto bg-[#1C1E53] flex justify-center"
+        >
+          <div
+            class="h-[691px] relative"
+          >
+            <img
+              class="w-full h-full object-cover opacity-[50%]"
+              src="./src/images/form.png"
+              alt=""
+            />
+
+            <div
+              class="absolute top-[96px] left-[96px]"
+            >
+              <h3
+                class="font-medium  text-[54px] leading-[74px] text-white mb-[24px]"
+              >
+                Building stellar websites for early startups
+              </h3>
+              <p
+                class="font-medium  text-[16px] leading-[28px] text-white"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="h-[691px]"
+          >
+            <h3
+              class="font-medium   text-[32px] leading-[48px] text-white ms-[96px] mb-[16px] mt-[96px]"
+            >
+              Send inquiry
+            </h3>
+            <p
+              class=" font-medium  text-[16px] leading-[28px] text-[#F4F6FC] ms-[96px] text-start line-clamp-2"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+
+            <form
+              action="index.html"
+              method="get"
+              class=" flex flex-col justify-center items-center mx-auto gap-y-[16px] mt-[40px]"
+            >
+              <input
+                id="t1"
+                class="capitalize pl-[32px] w-full h-[64px] bg-transparent border-[1.5px] border-solid border-[#FFFFFF0D] rounded-[8px] text-[#888AA8] font-normal text-[16px] leading-[28px]"
+                type="text"
+                placeholder="your name"
+                name="name"
+                checked=""
+              />
+              <input
+                id="t1"
+                class="capitalize pl-[32px] w-full h-[64px] bg-transparent border-[1.5px] border-solid border-[#FFFFFF0D] rounded-[8px] text-[#888AA8] font-normal  text-[16px] leading-[28px]"
+                type="email"
+                name="email"
+                placeholder="email"
+              />
+              <input
+                id="t1"
+                class="capitalize pl-[32px] w-full h-[64px] bg-transparent border-[1.5px] border-solid border-[#FFFFFF0D] rounded-[8px] text-[#888AA8] font-normal  text-[16px] leading-[28px]"
+                type="url"
+                name="URL"
+                placeholder="paste your figma design URL"
+              />
+
+              <input
+                class="w-[150px] h-[64px] bg-[#FCD980] text-[#1B1C2B] rounded-[41px] font-semibold  text-[18px] leading-[32px] cursor-pointer mt-[23px] hover:bg-[#FDE4A6] transition-all"
+                type="submit"
+                value="Send an Inquiry"
+              />
+            </form>
+
+            <a
+              href="#"
+              class="block w-fit h-[32px] font-[reg] font-[500] text-[16px] leading-[28px] text-white mt-[28px] mx-auto"
+            >
+              <h2 class="inline-block">Get in touch with us</h2>
+              <img
+                class="w-[24px] h-fit inline-block"
+                src="./src/images/arrow.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion -->
+      <!-- #region blog-->
+       <section class=" w-full h-fit pb-[128px] ">
+        <div class="w-[1600px] h-[737px] mx-auto  tablet:w-fit desktop:h-[737px]">
+          <h2 class="p-[20px] font-semibold  text-[48px] leading-[64px] text-[#282938] mb-[64px]">
+            Our blog
+          </h2>
+          <div class="grid max-desktop:grid-cols-3 max-tablet:grid-cols-2 max-mobile:grid-cols-1 justify-center items-center gap-x-[32px] gap-y-[70px] px-[10px]">
+            <div class=" max-w-[405px] min-h-[609px]">
+              <img src="./src/images/blog-1.png" class="w-full h-[285px] object-cover" alt="">
+              <span class="font-normal text-[16px] leading-[28px] text-[#282938] opacity-[70%] mt-[40px] block">19 Jan 2022</span>
+              <h3 class="font-normal text-[24px] leading-[36px] text-[#282938] mt-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h3>
+              <span class="font-normal text-[16px] leading-[28px] text-[#282938] opacity-[70%] mt-[16px] block">See how pivoting to Webflow changed one person’s sales
+                strategy and allowed him to attract</span>
+              <a href="#" class="block w-fit h-[28px] font-normal text-[16px] leading-[28px] text-[#282938] mt-[32px]">
+                <h2 class="inline-block">Read More</h2>
+                <img class="w-[24px] h-fit inline-block" src="./src/images/arrow-blk.svg" alt="">
+              </a>
+            </div>
+            <div class=" max-w-[405px] min-h-[609px]">
+              <img src="./src/images/blog-2.png" class="w-full h-[285px] object-cover" alt="">
+              <span class="font-normal text-[16px] leading-[28px] text-[#282938] opacity-[70%] mt-[40px] block">19 Jan 2022</span>
+              <h3 class="font-normal text-[24px] leading-[36px] text-[#282938] mt-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h3>
+              <span class="font-normal text-[16px] leading-[28px] text-[#282938] opacity-[70%] mt-[16px] block">See how pivoting to Webflow changed one person’s sales
+                strategy and allowed him to attract</span>
+              <a href="#" class="block w-fit h-[28px] font-normal text-[16px] leading-[28px] text-[#282938] mt-[32px]">
+                <h2 class="inline-block">Read More</h2>
+                <img class="w-[24px] h-fit inline-block" src="./src/images/arrow-blk.svg" alt="">
+              </a>
+            </div>
+            <div class=" max-w-[405px] min-h-[609px]">
+              <img src="./src/images/blog-3.png" class="w-full h-[285px] object-cover" alt="">
+              <span class="font-normal text-[16px] leading-[28px] text-[#282938] opacity-[70%] mt-[40px] block">19 Jan 2022</span>
+              <h3 class="font-normal text-[24px] leading-[36px] text-[#282938] mt-[16px]">
+                How one Webflow user grew his single person consultancy from
+                $0-100K in 14 months
+              </h3>
+              <span class="font-normal text-[16px] leading-[28px] text-[#282938] opacity-[70%] mt-[16px] block">See how pivoting to Webflow changed one person’s sales
+                strategy and allowed him to attract</span>
+              <a href="#" class="block w-fit h-[28px] font-normal text-[16px] leading-[28px] text-[#282938] mt-[32px]">
+                <h2 class="inline-block">Read More</h2>
+                <img class="w-[24px] h-fit inline-block" src="./src/images/arrow-blk.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- #endregion -->
+      <!-- #region footer-->
+       <footer class="w-full h-[397px] bg-[#1C1E53]">
+        <section class="w-full h-[489px] pt-[96px] relative">
+          <div class="desktop:w-[1058px] tablet:ml-[160px] flex tablet:justify-between mobile:justify-center gap-[150px]  flex-row px-[10px]">
+            <div class="left mx-[100px]">
+              <img class="w-[160px] h-[32.41px]" src="./src/images/logo.svg" alt="">
+              <p class="max-w-[399px] font-normal  text-[16px] leading-[28px] text-white opacity-[80%] mt-[23.59px]">
+                We are always open to discuss your project and improve your
+                online presence.
+              </p>
+            </div>
+            <div class=" right w-[399px] h-[206px] tablet:w-[399px] mobile:max-w-[399px]">
+              <h2 class="font-bold text-[48px] leading-[64px] text-white">
+                Lets Talk!
+              </h2>
+              <p class="font-normal text-[16px] leading-[28px] text-white opacity-[80%] mt-[14px]">
+                We are always open to discuss your project,
+                 improve your online presence and help with your
+                  UX/UI design challenges.
+              </p>
+              <div class="w-[144px] flex justify-between mt-[28px]">
+                <a href="#">
+                  <img src="./src/images/ft-1.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="./src/images/ft-2.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="./src/images/ft-3.svg" alt="">
+                </a>
+                <a href="#">
+                  <img src="./src/images/ft-4.svg" alt="">
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="w-[517px] mobile:w-full tablet:w-[517px] h-[95px] relative mobile:left-0  tablet:left-[160px] bottom-0 bg-[#FCD980] tablet:block mobile:flex justify-center items-center desktop:mt-0 mobile:mt-[10px] mx-[20px]">
+              <div class="w-[343px] tablet:ml-[37px] flex justify-between  p-[20px]">
+                <div class="left w-fit tablet:mt-[17px]">
+                  <h2 class="font-sans text-[18px] leading-[32px] text-[#282938]">
+                    Email me at
+                  </h2>
+                  <h4 class="font-sans text-[16px] leading-[28px] text-[#282938] opacity-[80%]">
+                    contact@website.com
+                  </h4>
+                </div>
+                <div class="right w-fit tablet:mt-[17px]">
+                  <h2 class="font-sans text-[18px] leading-[32px] text-[#282938]">
+                    Call us
+                  </h2>
+                  <h4 class="font-sans text-[16px] leading-[28px] text-[#282938] opacity-[80%]">
+                    0927 6277 28525
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full h-[92px] bg-white flex tablet:justify-between flex-wrap flex-row mobile:justify-center items-center mobile:px-0 tablet:px-[160px] gap-[380px]">
+          <h3 class="font-sans font-medium text-[16px] leading-[28px] text-[#282938] desktop:mx-0 mx-auto">
+            Copyright 2022, Finsweet.com
+          </h3>
+          <ul class="w-[437px] h-[28px] flex font-medium font-sans text-[16px] leading-[28px] text-[#282938] tablet:flex justify-between @min-xs:hidden desktop:mx-0 mx-auto">
+            <li class="hover:text-[#585858]">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-[#585858]">
+              <a href="#">About us</a>
+            </li>
+            <li class="hover:text-[#585858]">
+              <a href="#">Features</a>
+            </li>
+            <li class="hover:text-[#585858]">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="hover:text-[#585858]">
+              <a href="#">FAO</a>
+            </li>
+            <li class="hover:text-[#585858]">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </section>
+       </footer>
+      <!-- #endregion -->
     </div>
-  <!-- #endregion end-pj-->
-  <style>
-    /* Smooth scrolling */
-    .slider-container {
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        overflow-x: auto;
-        scrollbar-width: none;
-        display: flex;
-    }
-    .slider-container::-webkit-scrollbar {
-        display: none;
-    }
-    .slide {
-        scroll-snap-align: start;
-        flex: 0 0 100%;
-    }
-</style>
-<script>
-  const slider = document.getElementById('slider');
-  const prevButton = document.getElementById('prev');
-  const nextButton = document.getElementById('next');
-  let currentIndex = 0;
+    <!-- #endregion end-pj-->
+    <script>
+      const slider = document.getElementById("slider");
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
+      let currentIndex = 0;
 
-  function updateSlider() {
-      const slideWidth = slider.clientWidth;
-      slider.scrollTo({
+      function updateSlider() {
+        const slideWidth = slider.clientWidth;
+        slider.scrollTo({
           left: currentIndex * slideWidth,
-          behavior: 'smooth'
-      });
-  }
+          behavior: "smooth",
+        });
+      }
 
-  nextButton.addEventListener('click', () => {
-      if (currentIndex < slider.children.length - 1) {
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < slider.children.length - 1) {
           currentIndex++;
-      } else {
+        } else {
           currentIndex = 0; // Loop back to first slide
-      }
-      updateSlider();
-  });
+        }
+        updateSlider();
+      });
 
-  prevButton.addEventListener('click', () => {
-      if (currentIndex > 0) {
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
           currentIndex--;
-      } else {
+        } else {
           currentIndex = slider.children.length - 1; // Loop back to last slide
+        }
+        updateSlider();
+      });
+
+      // Auto-play (Optional: Uncomment if needed)
+      // setInterval(() => {
+      //     nextButton.click();
+      // }, 4000);
+    </script>
+    <script>
+      //button in mobile-screen
+      function showhide() {
+        var div1 = document.getElementById("dsktp");
+        var div2 = document.getElementById("menu-tbmbl");
+        if (div1.style.display !== "block" && div2.style.display !== "block") {
+          div1.style.display = "block";
+          div2.style.display = "block";
+        } else {
+          div1.style.display = "none";
+          div2.style.display = "none";
+        }
       }
-      updateSlider();
-  });
 
-  // Auto-play (Optional: Uncomment if needed)
-  // setInterval(() => {
-  //     nextButton.click();
-  // }, 4000);
-</script>
-
-</body>
+      // refreshing the site
+      history.scrollRestoration = "manual";
+    </script>
+  </body>
 </html>
