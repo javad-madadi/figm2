@@ -24,3 +24,7 @@
   scroll-snap-align: start;
   flex: 0 0 100%;
 }
+
+*{
+  box-sizing: border-box;
+}

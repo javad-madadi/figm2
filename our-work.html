@@ -12,7 +12,7 @@
     <div class="max-w-[1600px] mx-auto">
         <div class="fixed w-full h-screen left-0 top-0 tablet:none mobile:hidden bg-[#2b2b2bbb] z-10" id="dsktp"></div>
         <!-- #region menu-->
-        <nav class="w-full h-[92px] bg-[#1C1E53] flex justify-between">
+        <nav class="w-full h-[92px] bg-[#1C1E53] flex justify-between sticky top-0 z-50">
             <div class="left w-fit h-full pt-[33px] flex mx-[150px] mobile:pl-[20px] desktop:pl-[160px]">
                 <img src="./src/images/logo.svg" class="w-[122px] h-[24.7px]" alt="">
             </div>
@@ -31,7 +31,7 @@
                     <a href="#">Features</a>
                 </li>
                 <li class="hover:text-slate-400 transition-all duration-200">
-                    <a href="#">Pricing</a>
+                    <a href="./pricing.html">Pricing</a>
                 </li>
                 <li class="hover:text-slate-400 transition-all duration-200">
                     <a href="#">FAQ</a>
@@ -191,89 +191,79 @@
          </main>
         <!-- #endregion -->
         <!-- #region footer-->
-        <footer class="w-full h-[397px] bg-[#1C1E53] mt-[128px]">
-            <section class="w-full h-[489px] pt-[96px] relative">
-              <div class="desktop:w-[1058px] tablet:ml-[160px] flex tablet:justify-between mobile:justify-center gap-[150px]  flex-row px-[10px]">
-                <div class="left mx-[100px]">
-                  <img class="w-[160px] h-[32.41px]" src="./src/images/logo.svg" alt="">
-                  <p class="max-w-[399px] font-normal  text-[16px] leading-[28px] text-white opacity-[80%] mt-[23.59px]">
-                    We are always open to discuss your project and improve your
-                    online presence.
-                  </p>
-                </div>
-                <div class=" right w-[399px] h-[206px] tablet:w-[399px] mobile:max-w-[399px]">
-                  <h2 class="font-bold text-[48px] leading-[64px] text-white">
-                    Lets Talk!
-                  </h2>
-                  <p class="font-normal text-[16px] leading-[28px] text-white opacity-[80%] mt-[14px]">
-                    We are always open to discuss your project,
-                     improve your online presence and help with your
-                      UX/UI design challenges.
-                  </p>
-                  <div class="w-[144px] flex justify-between mt-[28px]">
-                    <a href="#">
-                      <img src="./src/images/ft-1.svg" alt="">
-                    </a>
-                    <a href="#">
-                      <img src="./src/images/ft-2.svg" alt="">
-                    </a>
-                    <a href="#">
-                      <img src="./src/images/ft-3.svg" alt="">
-                    </a>
-                    <a href="#">
-                      <img src="./src/images/ft-4.svg" alt="">
-                    </a>
+        <footer class="w-full min-h-[489px] bg-[#1C1E53]">
+          <section class="w-full min-h-[397px] pt-[96px] relative">
+              <div class="desktop:w-[1058px] tablet:ml-[160px] flex tablet:justify-between mobile:justify-center
+               gap-y-[70px] gap-x-[10px] flex-wrap flex-row px-[10px]">
+                  <div class="left">
+                      <img src="./src/images/logo.svg" alt="" class="w-[160px] h-[32.41px]">
+                      <p class="max-w-[399px] font-sans font-[500] text-[16px] leading-[28px] text-white opacity-80 mt-[23.59px]">
+                          We are always open to discuss your project and improve your
+                          online presence.
+                      </p>
+                  </div> 
+                  <div class="right tablet:w-[399px] mobile:max-w-[399px] me-[350px]">
+                      <h2 class="font-sans font-[600] text-[48px] leading-[64px] text-white"> Lets Talk </h2>
+                      <p class="font-sans font-[500] text-[16px] leading-[28px] text-white opacity-80 mt-[14px]">
+                          We are always open to discuss your project, improve your online
+                          presence and help with your UX/UI design challenges.
+                      </p>
+                      <div class="w-[144px] flex justify-between mt-[28px]">
+                          <a href="#">
+                            <img src="./src/images/ft-1.svg" alt="">
+                          </a>
+                          <a href="#">
+                            <img src="./src/images/ft-2.svg" alt="">
+                          </a>
+                          <a href="#">
+                            <img src="./src/images/ft-3.svg" alt="">
+                          </a>
+                          <a href="#">
+                            <img src="./src/images/ft-4.svg" alt="">
+                          </a>
+                        </div>
                   </div>
-                </div>  
               </div>
-              <div class="w-[517px] mobile:w-full tablet:w-[517px] h-[95px] relative mobile:left-0  tablet:left-[160px] bottom-0 bg-[#FCD980] tablet:block mobile:flex justify-center items-center desktop:mt-0 mobile:mt-[10px] mx-[20px]">
-                  <div class="w-[343px] tablet:ml-[37px] flex justify-between  p-[20px]">
+              <div class="mobile:w-full tablet:w-[517px] h-[95px] relative mobile:left-0 tablet:left-[160px] bottom-0 bg-[#FCD980]
+               tablet:block mobile:flex justify-center items-center desktop:mt-0 mobile:mt-[17px]">
+                  <div class="w-[343px] tablet:ml-[37px] flex justify-between">
                     <div class="left w-fit tablet:mt-[17px]">
-                      <h2 class="font-sans text-[18px] leading-[32px] text-[#282938]">
-                        Email me at
-                      </h2>
-                      <h4 class="font-sans text-[16px] leading-[28px] text-[#282938] opacity-[80%]">
-                        contact@website.com
-                      </h4>
+                      <h2 class="font-sans font-[500] text-[18px] leading-[32px] text-[#282938]">Email me at</h2>
+                      <h4 class="font-sans font-[400] text-[16px] leading-[28px] text-[#282938] opacity-80">contact@website.com</h4>
                     </div>
-                    <div class="right w-fit tablet:mt-[17px]">
-                      <h2 class="font-sans text-[18px] leading-[32px] text-[#282938]">
-                        Call us
-                      </h2>
-                      <h4 class="font-sans text-[16px] leading-[28px] text-[#282938] opacity-[80%]">
-                        0927 6277 28525
-                      </h4>
+                    <div class="right tablet:mt-[17px]">
+                      <h2 class="font-sans font-[500] text-[18px] leading-[32px] text-[#282938]">Call us</h2>
+                      <h4 class="font-sans font-[400] text-[16px] leading-[28px] text-[#282938] opacity-80">0927 6277 28525</h4>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <section class="w-full h-[92px] bg-white flex tablet:justify-between flex-wrap flex-row mobile:justify-center items-center mobile:px-0 tablet:px-[160px] gap-[380px]">
-              <h3 class="font-sans font-medium text-[16px] leading-[28px] text-[#282938] desktop:mx-0 mx-auto">
-                Copyright 2022, Finsweet.com
-              </h3>
-              <ul class="w-[437px] h-[28px] flex font-medium font-sans text-[16px] leading-[28px] text-[#282938] tablet:flex justify-between @min-xs:hidden desktop:mx-0 mx-auto">
+          </section>
+          <section class="w-full h-[92px] bg-white flex tablet:justify-between flex-wrap flex-row mobile:justify-center items-center 
+           mobile:px-0 tablet:px-[160px] gap-x-[70px]">
+              <h3 class="font-sans font-[500] text-[16px] leading-[28px] text-[#282938] desktop:mx-0 mx-auto">Copyright 2022, Finsweet.com</h3>
+              <ul class="w-[437px] font-sans font-[500] text-[16px] leading-[28px] text-[#282938] tablet:flex justify-between
+               mobile:hidden desktop:mx-0 mx-auto">
                 <li class="hover:text-[#585858]">
                   <a href="./index.html">Home</a>
                 </li>
                 <li class="hover:text-[#585858]">
-                  <a href="#">About us</a>
+                  <a href="#">about us</a>
                 </li>
                 <li class="hover:text-[#585858]">
                   <a href="#">Features</a>
                 </li>
                 <li class="hover:text-[#585858]">
-                  <a href="#">Pricing</a>
+                  <a href="./pricing.html">pricing</a>
+                </li>
+                <li class="hover:text-[#585858] uppercase">
+                  <a href="#">FAQ</a>
                 </li>
                 <li class="hover:text-[#585858]">
-                  <a href="#">FAO</a>
-                </li>
-                <li class="hover:text-[#585858]">
-                  <a href="#">Blog</a>
-                </li>
+                  <a href="#">blog</a>
+                </li>  
               </ul>
             </section>
-           </footer>
+       </footer>
         <!-- #endregion -->
     </div>
     <!-- #endregion -->
