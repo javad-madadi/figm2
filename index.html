@@ -53,48 +53,32 @@
       </nav>
         <!-- #endregion end-menu -->
         <!-- #region hero-->
-        <header class="flex gap-[60px] bg-[#1C1E53]">
-          <div class="w-[582px] h-[414px] mt-[180px] ms-[160px]">
-            <div class="top w-[inherit] h-[302px]">
-              <h1
-                class="text-[54px] font-600 font-semibold text-white leading-[74px]"
-              >
-                Building stellar websites for early startups
-              </h1>
-              <p
-                class="text-[16px] leading-[28px] font-400 text-white pt-[24px]"
-              >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                corporis nesciunt cum eum fugit.
+        <header class="flex gap-[100px] bg-[#1C1E53] desktop:h-[968px] mobile:h-fit">
+          <div class="w-full flex desktop:flex-row flex-nowrap flex-row justify-center tablet:gap-[60px] items-center pt-[126px]">
+            <div class="tablet:w-[582px] mobile:mx-[100px] tablet:h-[414px] mobile:mb-[50px] desktop:mb-0">
+              <h2 class="font-sans font-[630] tablet:text-[57px] mobile:text-[40px] leading-[74px] text-white mb-[24px] line-clamp-3">
+                  Building stellar websites for early startups
+              </h2>
+              <p class="font-sans font-[400] text-[16px] leading-[28px] text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt.
               </p>
-            </div>
-            <div class="bottom flex mt-[48px] items-center">
-              <button
-                class="w-[230px] h-[64px] flex items-center bg-[#FCD980] justify-center rounded-[41px] text-[18px] leading-[32px] font-800 font-sans cursor-pointer"
-              >
-                <p class="w-[118px] h-[32px]">View our work</p>
+              <button class="w-[230px] h-[64px] bg-[#FCD980] text-black rounded-[41px] font-sans font-[500] text-[16px] mt-[48px]">
+                View ore work
               </button>
-              <div
-                class="flex w=[128px] h-[28px] ps-[40px] justify-center items-center"
-              >
-                <p class="text-[16px] leading-[28px] text-white font-sans">
-                  View Pricing
-                </p>
-                <img
-                  src="./src/images/arrow.svg"
-                  class="w-[24px] ms-[16px]"
-                  alt=""
-                />
-              </div>
+              <a href="./pricing.html" class="w-[138px] h-[28px] inline-block font-sans font-[500] text-[16px] leading-[28px] text-white ml-[40px] tablet:mt-0 mobile:mt-[10px]">
+                <h2 class="inline-block">View Pricing</h2>
+                <img src="./src/images/arrow.svg" alt="" class="w-[24px] h-fit inline-block">
+              </a>
             </div>
-          </div>
-          <div class="mt-[200px] tablet:w-[630px] tablet:h-[361.12px]">
-            <img class="px-[10px]" src="./src/images/hero.svg" alt="" />
+            <div class="tablet:w-[630px] tablet:h-[361.12px]">
+              <img class="px-[10px]" src="./src/images/hero.svg" alt="" />
+            </div>
           </div>
         </header>
       <!-- #endregion end hero-->
       <!-- #region how it works-->
-      <div class="w-full h-[661px] bg-[#F4F6FC] flex gap-x[48px] gap-[142px]">
+      <div class="w-full desktop:h-[661px] h-auto flex tablet:flex-row flex-wrap mobile:justify-center tablet:justify-normal tablet:gap-x-[142px] bg-[#F4F6FC] tablet:px-0 mobile:px-[10px]">
         <div class="left w-[405px] h-[184px] mt-[128px] ms-[165px]">
           <h2 class="text-[48px] font-bold font-sans leading-[64px]">
             How we work
